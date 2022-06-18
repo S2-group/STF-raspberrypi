@@ -7,7 +7,7 @@ This is a simple guide to setup a local development [Smartphone Test Farm (STF)]
 * Raspberry Pi.
 * A good quality SD card that servers as the PI's OS. This is important to speed up the installation process but most importantly to run the STF and have reasonably low latency when interacting with phones.
   * An SDXC (Speed) Class 10, UHS-1 (U1), V10 or better.
-    <img src="https://static1.anpoimages.com/wordpress/wp-content/uploads/2017/05/nexus2cee_video_speed-class_01.jpg" alt="SD speed classification" width="300"/>
+  <img src="https://static1.anpoimages.com/wordpress/wp-content/uploads/2017/05/nexus2cee_video_speed-class_01.jpg" alt="SD speed classification" width="300"/>
   * Prefer reputable quality brands, such as Kingston, Samsung, SanDisk, etc.
 * A phone to test STF (e.g. LG Nexus 5X).
 * A USB cable capable of both data transfers and charing, in order to connect the phone to the Pi.
