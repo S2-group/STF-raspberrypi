@@ -6,8 +6,7 @@ This is a simple guide to setup a local development [Smartphone Test Farm (STF)]
 
 * Raspberry Pi.
 * A good quality SD card that servers as the PI's OS. This is important to speed up the installation process but most importantly to run the STF and have reasonably low latency when interacting with phones.
-  * An SDXC (Speed) Class 10, UHS-1 (U1), V10 or better.
-  <img src="https://static1.anpoimages.com/wordpress/wp-content/uploads/2017/05/nexus2cee_video_speed-class_01.jpg" alt="SD speed classification" width="300"/>
+  * An SDXC (Speed) Class 10, UHS-1 (U1), V10 or better.<br /><img src="https://static1.anpoimages.com/wordpress/wp-content/uploads/2017/05/nexus2cee_video_speed-class_01.jpg" alt="SD speed classification" width="300"/>
   * Prefer reputable quality brands, such as Kingston, Samsung, SanDisk, etc.
 * A phone to test STF (e.g. LG Nexus 5X).
 * A USB cable capable of both data transfers and charing, in order to connect the phone to the Pi.
@@ -155,12 +154,9 @@ The `rethinkdb` will also create a "rethinkdb_data" folder, which will hold the 
 
 To verify that everything works correctly, open a browser in the Pi (e.g. via VNC, HDMI, or SSH with X11 forwarding) and check the following:
 
-1. On `http://127.0.0.1:8080/` the rethinkdb dashboard should be running.
-  <img src="./resources/rethinkdb-dashboard.png" alt="rethinkdb-dashboard" width="300"/>
-2. On `http://127.0.0.1:7100/` the STF interface should be running. You can login with credentials `admin:admin@fakedomain.com`
-  <img src="./resources/stf-login.png" alt="stf-login" width="300"/>
-3. Connect a phone to the Raspberry Pi in one of its two USB 2.0 ports. If prompted on the phone to accept an RSA key, tick the "Always remember this computer" and tap yes. Now the phone should appear under the STF dashboard.
-  <img src="./resources/stf-dashboard.png" alt="stf-dashboard" width="300"/>
+1. On `http://127.0.0.1:8080/` the rethinkdb dashboard should be running.<br /><img src="./resources/rethinkdb-dashboard.png" alt="rethinkdb-dashboard" width="400"/>
+2. On `http://127.0.0.1:7100/` the STF interface should be running. You can login with credentials `admin:admin@fakedomain.com`<br /><img src="./resources/stf-login.png" alt="stf-login" width="400"/>
+3. Connect a phone to the Raspberry Pi in one of its two USB 2.0 ports. If prompted on the phone to accept an RSA key, tick the "Always remember this computer" and tap yes. Now the phone should appear under the STF dashboard.<br /><img src="./resources/stf-dashboard.png" alt="stf-dashboard" width="400"/>
 
 ### Stopping STF
 
