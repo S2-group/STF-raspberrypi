@@ -1,0 +1,3 @@
+ipython
+tqdm
+PyP100
