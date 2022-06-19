@@ -1,0 +1,3 @@
+#!/bin/bash
+# Standalone script to be run by systemd during shutdown/reboot for graceful exit of STF
+sudo -H -u stf bash -c '. $HOME/sources/env-cron.inc && $HOME/sources/stop-supervisord.sh'

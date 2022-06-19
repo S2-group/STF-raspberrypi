@@ -207,6 +207,40 @@ This will stop the STF related instances, but supervisord will keep running in t
 pkill supervisord
 ```
 
+## Auto-start during boot (Optional)
+
+Next, we will configure STF to automatically start after booting. To do so, first we have to configure the Pi to automatically login as the `stf` user on boot:
+
+```bash
+sudo raspi-config
+```
+
+Then navigate to "1 System Options" --> "S5 Boot / Auto Login" --> select "automatically login as 'stf' user" for either "text console" or "Desktop GUI".
+
+Next we will use cron and configure it to run a script whenever we login:
+
+```bash
+crontab -e
+```
+
+and add the following lines
+
+```txt
+SHELL=/bin/bash
+BASH_ENV=~/.bashrc
+@reboot (. $HOME/sources/env-cron.inc && $HOME/sources/start-supervisord.sh; )
+```
+
+## Auto-stop during shutdown (Optional)
+
+Now we will ensure graceful shutdown for STF when the Pi is shutdown. To do so run the following commands:
+
+```bash
+sudo mv sources/stop-stf-lab /etc/init.d/stop-stf-lab
+sudo ln -s /etc/init.d/stop-stf-lab /etc/rc6.d/K99stop_stf_lab # Hook reboot event
+sudo ln -s /etc/init.d/stop-stf-lab /etc/rc0.d/K99stop_stf_lab # Hook shutdown event
+```
+
 ## Troubleshooting
 
 * Check out troubleshooting steps in [STF.md](STF.md)
@@ -214,3 +248,4 @@ pkill supervisord
 * Check STF and rethinkdb logs for errors in `~/logs/*.log`
 * If you modified `sources/supervisord.conf`, then you have to kill the supervisord instance and start it again.
 * If you modified any of the configuration files of nginx in `/etc/nginx/*`, make sure to restart nginx.
+* If you are using cron, check the logs under `/var/log/cron` and `/var/mail/stf`.

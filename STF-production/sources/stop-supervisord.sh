@@ -1,11 +1,18 @@
 #!/bin/bash
 
-# Check for pyenv
+# Check for pyenv configuration
 command -v pyenv >/dev/null
 if [ $? -eq 0 ]; then
     eval "$(pyenv init -)"
     pyenv activate supervisord
 fi
+
+# Load nvm
+command -v nvm >/dev/null
+if [ $? -ne 0 ]; then
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+fi
+nvm use 8
 
 if [ -z ${BASE_DIR+x} ]; then 
     export BASE_DIR=$HOME
