@@ -39,4 +39,5 @@ Codename:       bullseye
 
 ## Guides
 
-1. [STF.md](STF.md) - A guide on how to setup a local development STF instance.
+1. [STF local development](STF.md) - A guide on how to setup a local development STF instance.
+2. [STF production](STF-production/README.md) - A guide on how to move away from a local development STF instance, into deploying each STF component individually as in a [production environment](https://github.com/DeviceFarmer/stf/blob/master/doc/DEPLOYMENT.md).

@@ -52,7 +52,7 @@ sudo passwd -l stf
 
 Now disconnect from SSH and connect again.
 
-### `apt` packages
+### Installing APT packages
 
 Run the following command to install the necessary packages:
 
