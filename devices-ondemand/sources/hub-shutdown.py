@@ -1,7 +1,5 @@
 
-import logging
 import subprocess
-import shlex
 import sys
 import time
 from tqdm import tqdm
