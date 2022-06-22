@@ -4,6 +4,13 @@ This is a repository containing information on how to run a [Smartphone Test Far
 
 Furthermore, it demonstrates a novel, low-cost, and creative approach to solve the common battery degradation problem [(issue#426)](https://github.com/openstf/stf/issues/426) faced by all STF users.
 
+## Guides
+
+1. [STF local development](STF.md) - A guide on how to setup a local development STF instance.
+2. [STF production](STF-production/README.md) - A guide on how to move away from a local development STF instance, into deploying each STF component individually as in a [production environment](https://github.com/DeviceFarmer/stf/blob/master/doc/DEPLOYMENT.md).
+3. [Devices on demand](devices-ondemand/README.md) - A guide on how to solve the [battery issue](https://github.com/openstf/stf/issues/426) for STF setups. It uses a smart plug and an externally powered USB hub to remotely **boot** and **power-off** phone devices.
+4. [Hotspot](hotspot/README.md)  - A guide on how to setup the Pi's WiFi antenna to act as a hotspot. Useful for the phones to have internet access.
+
 ## Assumptions
 
 The setup of STF has been tested on the following list of hardware and software assumptions. However, this does not mean that this guide is not applicable to other similar setups (e.g. older Pi models, 32-bit OS, etc.)
@@ -36,10 +43,3 @@ Description:    Debian GNU/Linux 11 (bullseye)
 Release:        11
 Codename:       bullseye
 ```
-
-## Guides
-
-1. [STF local development](STF.md) - A guide on how to setup a local development STF instance.
-2. [STF production](STF-production/README.md) - A guide on how to move away from a local development STF instance, into deploying each STF component individually as in a [production environment](https://github.com/DeviceFarmer/stf/blob/master/doc/DEPLOYMENT.md).
-3. [Devices on demand](devices-ondemand/README.md) - A guide on how to solve the [battery issue](https://github.com/openstf/stf/issues/426) for STF setups. It uses a smart plug and an externally powered USB hub to remotely **boot** and **power-off** phone devices.
-4. [Hotspot](hotspot/README.md)  - A guide on how to setup the Pi's WiFi antenna to act as a hotspot. Useful for the phones to have internet access.
