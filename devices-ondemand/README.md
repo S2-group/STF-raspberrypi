@@ -80,7 +80,7 @@ After about ~30 seconds, the device should automatically power off. Re-plugging 
 
 ## SmartPlug setup
 
-The SmartPlug has no particular setup. It should only be accessible by the Pi in a local network. Ideally, the Pi is connected to the outside world via Ethernet, and you use its WiFi adapter to create a hotspot where both the phones and the Smart Plug connect to.
+The SmartPlug has no particular setup. It should only be accessible by the Pi in a local network. Ideally, the Pi is connected to the outside world via Ethernet, and you use its WiFi antenna to [create a hotspot](hotspot/README.md) where both the phones and the Smart Plug connect to.
 
 ## Automation script setup
 
