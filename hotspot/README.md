@@ -1,6 +1,6 @@
 # Raspberry Pi Hotspot
 
-This is a guide on how to setup a WiFi hotspot on a Raspberry Pi. It is useful in the STF setup, as it can grant internet access to the phones. Furthermore, if you want to follow the [devices-ondemand](devices-ondemand/README.md) guide, then you can also connect the Smart Plug involved in this hotspot.
+This is a guide on how to setup a WiFi hotspot on a Raspberry Pi. It is useful in the STF setup, as it can grant internet access to the phones. Furthermore, if you want to follow the [devices-ondemand](../devices-ondemand/README.md) guide, then you can also connect the Smart Plug involved in this hotspot.
 
 This guide is heavily based on the a great guide from [here](https://raspberrypi-guide.github.io/networking/create-wireless-access-point).
 
