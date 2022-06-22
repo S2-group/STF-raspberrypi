@@ -42,3 +42,4 @@ Codename:       bullseye
 1. [STF local development](STF.md) - A guide on how to setup a local development STF instance.
 2. [STF production](STF-production/README.md) - A guide on how to move away from a local development STF instance, into deploying each STF component individually as in a [production environment](https://github.com/DeviceFarmer/stf/blob/master/doc/DEPLOYMENT.md).
 3. [Devices on demand](devices-ondemand/README.md) - A guide on how to solve the [battery issue](https://github.com/openstf/stf/issues/426) for STF setups. It uses a smart plug and an externally powered USB hub to remotely **boot** and **power-off** phone devices.
+4. [Hotspot](hotspot/README.md)  - A guide on how to setup the Pi's WiFi antenna to act as a hotspot. Useful for the phones to have internet access.
