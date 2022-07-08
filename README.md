@@ -1,4 +1,4 @@
-# Energy Experiment Utilities
+# STF on Raspberry Pi
 
 This is a repository containing information on how to run a [Smartphone Test Farm (STF)](https://github.com/DeviceFarmer/stf) on a Raspberry Pi Model 4B. 
 
