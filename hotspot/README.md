@@ -39,7 +39,7 @@ dhcp-range=192.168.40.2,192.168.40.254,255.255.255.0,24h
 Create the file /etc/hostapd/hostapd.conf:
 
 ```txt
-wget https://raw.githubusercontent.com/S2-group/energy-experiments-utilities/master/hotspot/hostapd.conf
+wget https://raw.githubusercontent.com/S2-group/STF-raspberrypi/master/hotspot/sources/hostapd.conf
 sudo mv hostapd.conf /etc/hostapd/hostapd.conf
 ```
 
